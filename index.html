@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey</h1>
+    <p id="description">Help us improve freeCodeCamp!</p>
+
+    
+    <form id="survey-form">
+      <fieldset>
+
+        <label class="label" id="email-label" for="email">Email <input id="email" placeholder="Email" required type="email"/>
+        </label>
+
+        <label class="label" id="name-label" for="name">Name <input id="name" type="text" placeholder="Name" required/>
+        </label>
+
+        <label class="label" id="number-label" for="number">Age <input id="number" type="number" min="14" max="99" placeholder="Age" required/>
+        </label>
+
+        <label>Would you recommend Free Code Camp to others?</label>
+        <label class="radio" for="recommendation">Yes<input value="1" id="rec-yes" name="recommendation" type="radio"/></label>
+        <label class="radio" for="recommendation">No<input value="2" id="rec-no" name="recommendation" type="radio"/></label>
+
+        <label>From where did you find freeCodeCamp?</label>
+        <select class="selector" id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Friends</option>
+          <option value="2">Work</option>
+          <option value="3">Other</option>
+        </select>
+
+        <label>What skill are you learning in freeCodeCamp?</label>
+        <label for="front-end">Front-end Development:<input type="checkbox" name="front-end" value="front-end"/></label>
+        <label for="back-end">Back-end Development:<input type="checkbox" name="back-end" value="back-end"/></label>
+        <label for="dsa">Data Structures and Algorithms:<input type="checkbox" name="dsa" value="dsa"/></label>
+        <label for="other">Other<input type="checkbox" name="other" value="other"/></label>
+
+
+        <label for="comment-suggestions">Comments or suggestions:
+          <textarea id="comment-suggestions" name="comment-suggestions" rows="10" cols="30" placeholder="Feedback"></textarea>
+        </label>
+      
+      
+
+      </fieldset>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+    
+  </body>
+</html>
